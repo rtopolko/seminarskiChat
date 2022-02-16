@@ -1,0 +1,28 @@
+@use "../utilities" as *;
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  position: $POSITION_FIXED;
+  width: 100%;
+  height: 10vh;
+  background-color: $COLOR_BACKGROUND_HEADER;
+}
+
+.main {
+  position: $POSITION_FIXED;
+  top: 10vh;
+  height: 75vh;
+  width: 100%;
+  background-image: $COLOR_BACKGROUND_HOME;
+}
+
+.footer {
+  position: $POSITION_FIXED;
+  bottom: 0;
+  width: 100%;
+  height: 15vh;
+  background-color: $COLOR_BACKGROUND_FOOTER;
+}

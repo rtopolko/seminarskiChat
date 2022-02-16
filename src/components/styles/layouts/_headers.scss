@@ -1,0 +1,31 @@
+@use "../utilities" as *;
+@use "../html_elements" as *;
+
+.header_logo_programa {
+  position: $POSITION_ABSOLUTE;
+  left: 30px;
+  top: 10px;
+}
+
+.header_naslov_app {
+  position: $POSITION_ABSOLUTE;
+  top: 15px;
+  left: 120px;
+  font-family: $FONT_CALIBRI;
+  font-size: 25px;
+  color: $COLOR_NASLOV;
+}
+
+.button_app {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 10px;
+  margin-right: 20px;
+  .button_info {
+    @include buttonStyle_1(50px, 50px, 50%, $COLOR_BUTTON_INFO);
+    &:hover {
+      @include buttonStyleHover($COLOR_BUTTON_INFO_HOVER);
+    }
+  }
+}

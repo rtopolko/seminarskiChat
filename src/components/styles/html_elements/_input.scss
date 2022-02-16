@@ -1,0 +1,59 @@
+@use "../utilities" as *;
+
+@mixin inputStyle($position, $top, $left, $width) {
+  position: $position;
+  top: $top;
+  left: $left;
+  width: $width;
+  padding: 12px;
+
+  border-radius: 4px;
+  font-family: $FONT_CALIBRI;
+  font-size: 18px;
+}
+
+@mixin inputKontejner(
+  $POSITION,
+  $TOP,
+  $LEFT,
+  $WIDTH,
+  $HEIGHT,
+  $BACKGROUND,
+  $PADDING
+) {
+  position: $POSITION;
+  top: $TOP;
+  left: $LEFT;
+  width: $WIDTH;
+  height: $HEIGHT;
+  background: $BACKGROUND;
+  padding: $PADDING;
+  // box-sizing: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+@mixin inputPlaceholderStyle() {
+  color: rgb(220, 217, 247);
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+@mixin inputStyle_Salji() {
+  margin-left: 5%;
+  width: 80%;
+  border-radius: 4px;
+  font-family: $FONT_CALIBRI;
+  font-size: 16px;
+}
+
+@mixin pozicija($HEIGHT, $WIDTH, $POISITION) {
+  height: $HEIGHT;
+  width: $WIDTH;
+  position: $POISITION;
+}
+
+@mixin logiranje_labela($POSITION, $BOTTOM, $LEFT, $COLOR) {
+  position: $POSITION;
+  bottom: $BOTTOM;
+  left: $LEFT;
+  color: $COLOR;
+}

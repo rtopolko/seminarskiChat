@@ -1,0 +1,73 @@
+@use "../utilities" as *;
+
+%btn {
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+@mixin buttonStyle_Login(
+  $POSITION,
+  $LEFT,
+  $TOP,
+  $WIDTH,
+  $BORDER_RADIUS,
+  $PADDING
+) {
+  position: $POSITION;
+  left: $LEFT;
+  top: $TOP;
+  width: $WIDTH;
+  color: $COLOR_WHITE;
+  background-image: $COLOR_BUTTON;
+  border-radius: $BORDER_RADIUS;
+  padding: $PADDING;
+  @extend %btn;
+}
+
+@mixin buttonStyle($WIDTH, $HEIGHT, $BORDER_RADIUS, $MARGIN_LEFT) {
+  width: $WIDTH;
+  height: $HEIGHT;
+  border-radius: $BORDER_RADIUS;
+  margin-left: $MARGIN_LEFT;
+  color: $COLOR_WHITE;
+  background-image: $COLOR_BUTTON;
+  @extend %btn;
+}
+
+@mixin buttonHover() {
+  color: $COLOR_BLACK;
+  background-image: $COLOR_BUTTON_HOVER;
+}
+
+@mixin buttonStyle_1($WIDTH, $HEIGHT, $BORDER_RADIUS, $COLOR) {
+  width: $WIDTH;
+  height: $HEIGHT;
+  border-radius: $BORDER_RADIUS;
+  background-color: $COLOR;
+  @extend %btn;
+}
+
+@mixin buttonStyleHover($COLOR) {
+  background: $COLOR;
+}
+
+@mixin btn_close {
+  @extend %btn;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  border-radius: 15px;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(177, 4, 4);
+  border: 5px solid rgb(87, 86, 86);
+  color: white;
+  z-index: 1;
+}
+
+@mixin btn_closeHover {
+  background-color: rgb(4, 88, 25);
+  color: black;
+}

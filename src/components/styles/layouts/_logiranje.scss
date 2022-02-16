@@ -1,0 +1,139 @@
+@use "../utilities" as *;
+@use "../html_elements" as *;
+
+.logiranje_forma {
+  @include pozicija(75vh, 100%, $POSITION_FIXED);
+  top: 10vh;
+}
+
+.logiranje_pozadina {
+  background-image: url($URL_ICON_CHAT);
+  //background: url($URL_ICON_CHAT);
+  background-position: 60px 80px;
+  background-repeat: no-repeat;
+  background-size: 200px;
+}
+
+.logiranje_box {
+  display: $DISPLEY_FLEX;
+  position: $POSITION_RELATIVE;
+  top: 10px;
+  left: 50px;
+  width: 500px;
+  height: 300px;
+}
+
+.logiranje_greska {
+  position: $POSITION_ABSOLUTE;
+  margin: 95px 0;
+  left: 350px;
+  height: 50px;
+  width: 500px;
+  font-family: $FONT_CALIBRI;
+  font-size: 24px;
+  font-weight: bold;
+  color: $COLOR_NASLOV;
+}
+
+.logiranje_input::placeholder {
+  @include inputPlaceholderStyle();
+}
+.logiranje_button {
+  @include buttonStyle_Login(
+    $POSITION_ABSOLUTE,
+    550px,
+    230px,
+    100px,
+    10px,
+    16px
+  );
+}
+
+.logiranje_button:hover {
+  @include buttonHover();
+}
+
+.logiranje_kontejner {
+  @include inputKontejner(
+    $POSITION_ABSOLUTE,
+    150px,
+    350px,
+    450px,
+    80px,
+    transparent,
+    30px
+  );
+  .logiranje_kontejner_input {
+    @include pozicija(40px, 100%, $POSITION_RELATIVE);
+
+    input {
+      height: 100%;
+      width: 100%;
+      border: none;
+      outline: none;
+      color: $COLOR_WHITE;
+      border-bottom: 2px solid $COLOR_WHITE;
+      background: transparent;
+    }
+    label {
+      @include logiranje_labela(
+        $POSITION_ABSOLUTE,
+        10px,
+        0,
+        $COLOR_LABELA_LOGIRANJE
+      );
+      pointer-events: none;
+      transition: all 0.3s ease;
+    }
+    .logiranje_kontejner_linija {
+      @include pozicija(2px, 100%, $POSITION_ABSOLUTE);
+      bottom: 0px;
+    }
+  }
+}
+.logiranje_kontejner_input {
+  input {
+    &:focus {
+      ~ {
+        label {
+          transform: translateY(-30px);
+          font-size: 15px;
+          color: $COLOR_LABELA;
+        }
+        .logiranje_kontejner_linija {
+          &::before {
+            transform: scaleX(1);
+          }
+        }
+      }
+    }
+    &:valid {
+      ~ {
+        label {
+          transform: translateY(-30px);
+          font-size: 15px;
+          color: $COLOR_LABELA;
+        }
+        .logiranje_kontejner_linija {
+          &::before {
+            transform: scaleX(1);
+          }
+        }
+      }
+    }
+  }
+  .logiranje_kontejner_linija {
+    &::before {
+      @include pozicija(100%, 100%, $POSITION_ABSOLUTE);
+      content: "";
+      background: $COLOR_LABELA;
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+  }
+}
+
+.max_znakova {
+  font-size: 9px;
+  color: $COLOR_WHITE;
+}

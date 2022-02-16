@@ -1,0 +1,13 @@
+@use "../html_elements" as *;
+
+.input_box {
+  @include inputStyle_Salji();
+}
+
+.button_box {
+  @include buttonStyle(10%, 30px, 10px, 10px);
+}
+
+.button_box:hover {
+  @include buttonHover();
+}

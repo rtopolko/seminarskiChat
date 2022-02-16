@@ -1,0 +1,29 @@
+.forma_chatRoom {
+  height: 75vh;
+  display: flex;
+}
+
+.poruke_chatRoom {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 65%;
+  height: 65vh;
+}
+
+.upisPoruke_chatRoom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 65%;
+  height: 10vh;
+  padding: 20px;
+}
+
+.naChatu_chatRoom {
+  position: absolute;
+  top: -60px;
+  right: 0;
+  width: 35%;
+  height: 90vh;
+}

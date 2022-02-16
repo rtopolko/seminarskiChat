@@ -1,0 +1,67 @@
+@use "../html_elements" as *;
+@use "../utilities" as *;
+
+.forma_korisnici_prijavljeni {
+  position: absolute;
+  height: 380px;
+  width: 100%;
+  top: 20vh;
+  padding: 10px;
+}
+
+.zapamti {
+  position: relative;
+  height: 50px;
+  top: -50px;
+}
+
+.ikona {
+  position: absolute;
+  margin: 50px 30px;
+  height: 45px;
+  padding-top: 5px;
+  padding-left: 10px;
+  z-index: 1;
+}
+
+.korisnik {
+  position: absolute;
+  margin: 50px 30px;
+  width: 300px;
+  height: 100%;
+  padding-top: 15px;
+  padding-left: 50px;
+  padding-right: 20px;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 20px;
+  font-family: $FONT_CALIBRI;
+  font-size: 12px;
+  background-image: $COLOR_KORISNIK;
+  color: $COLOR_BLACK;
+}
+
+.naslov {
+  position: absolute;
+  top: 15vh;
+  padding: 10px;
+  font-family: $FONT_CALIBRI;
+  font-size: 12px;
+  font-weight: bold;
+  color: $COLOR_NASLOV;
+  text-align: left;
+}
+
+.gumb {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+}
+
+.odjava_gumb {
+  @include buttonStyle(100px, 30px, 15px, 0);
+}
+
+.odjava_gumb:hover {
+  @include buttonHover();
+}

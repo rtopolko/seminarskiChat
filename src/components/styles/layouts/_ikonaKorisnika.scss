@@ -1,0 +1,23 @@
+@use "../utilities" as *;
+
+.polozaj_Ikona {
+  position: $POSITION_ABSOLUTE;
+  top: 60px;
+  left: 20%;
+}
+
+.naslov_Odabir_Ikona {
+  position: $POSITION_ABSOLUTE;
+  top: 10px;
+  left: 50px;
+  padding: 10px;
+  font-family: $FONT_CALIBRI;
+  font-size: 20px;
+  color: rgb(13, 177, 241);
+}
+
+.polozaj_Chbx_Ikona {
+  position: $POSITION_ABSOLUTE;
+  margin: 35px;
+  left: 60px;
+}
