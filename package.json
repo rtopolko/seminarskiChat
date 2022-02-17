@@ -1,11 +1,13 @@
 {
   "name": "chat_app",
   "version": "1.0.0",
+  "homepage": "https://rtopolko.github.io/testSeminarskiChat",
   "description": "Chat aplikacija, spaja se na sceledron,potrebno se registrirati, sve potrebno za spajanje na sceladron stavi u env",
   "main": "index.js",
   "scripts": {
     "build": "webpack --config config/webpack.prod.js",
-    "start": "webpack serve --config config/webpack.dev.js --open"
+    "start": "webpack serve --config config/webpack.dev.js --open",
+    "deploy":"npm run build && gh-pages -d build"
   },
   "keywords": [
     "Chat",
@@ -20,6 +22,7 @@
   "private": true,
   "dependencies": {
     "core-js": "^3.20.2",
+    "gh-pages": "^3.2.3",
     "rc-scrollbars": "^1.1.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

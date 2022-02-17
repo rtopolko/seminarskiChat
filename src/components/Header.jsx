@@ -14,13 +14,13 @@ export default function Header() {
         <Fragment>
             {logiraniKorisnik && 
                 <Fragment>
-                     <img src={Staza_ikone(logiraniKorisnikIkonaID, spremljeneSveIkone)} className="header_logo_programa" alt="Ikona" height="64px" title="Ikona korisnika"/>
+                     <img src={Staza_ikone(logiraniKorisnikIkonaID, spremljeneSveIkone)} className="header_logo_programa" alt="Ikona" height="65px" title="Ikona korisnika"/>
                     <p className="header_naslov_app">{LOGIRANI_KORISNIK}  {logiraniKorisnik}</p>
                 </Fragment>
             }
             {!logiraniKorisnik &&
                 <Fragment>                                      
-                    <img src={IKONA_CHAT} className="header_logo_programa" alt="aplikacija_logo" height="45px" title="Ikona aplikacije"/>                
+                    <img src={IKONA_CHAT} className="header_logo_programa" alt="aplikacija_logo" height="65px" title="Ikona aplikacije"/>                
                     <p className="header_naslov_app">{CHAT_NASLOV}</p>
                     <div className="button_app">
                         <button className="button_info" onClick={fn_toggleModal}>Info</button>

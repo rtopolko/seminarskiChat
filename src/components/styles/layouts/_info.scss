@@ -4,11 +4,11 @@
 body.active-modal {
   overflow-y: hidden;
 }
-.btn-modal {
+.btn-modalxx {
   padding: 10px 20px;
   display: block;
   margin: 100px auto 0;
-  font-size: 18px;
+  font-size: 25px;
 }
 .modal {
   width: 100vw;
@@ -38,7 +38,7 @@ body.active-modal {
   background: rgb(87, 86, 86);
   padding: 14px 28px;
   border-radius: 5px;
-  width: 900px;
+  width: 1200px;
   height: 80vh;
 }
 
@@ -54,6 +54,7 @@ body.active-modal {
   h3 {
     margin-left: 20px;
     color: $COLOR_WHITE;
+    font-size: 25px;
   }
 }
 
@@ -92,6 +93,7 @@ body.active-modal {
     position: $POSITION_RELATIVE;
     left: 20px;
     color: $COLOR_WHITE;
+    font-size: 20px;
   }
 }
 .slika {
@@ -113,5 +115,5 @@ body.active-modal {
 .komentar {
   color: $COLOR_WHITE;
   font-family: $FONT_CALIBRI;
-  font-size: 12px;
+  font-size: 20px;
 }

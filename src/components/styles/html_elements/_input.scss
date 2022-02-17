@@ -38,11 +38,11 @@
 }
 
 @mixin inputStyle_Salji() {
-  margin-left: 5%;
+  margin-left: 20px;
   width: 80%;
   border-radius: 4px;
   font-family: $FONT_CALIBRI;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 @mixin pozicija($HEIGHT, $WIDTH, $POISITION) {

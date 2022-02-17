@@ -13,7 +13,7 @@ export default function KorisnikIkona({sveIkone,fn_staviIkonaKorisnik}) {
                         const{id,image,select}=item
                         return (
                             < Fragment key={id}>
-                                <img src={window.location.origin + image} alt="Moja_Ikona" height="50px" title="Moja ikona" />
+                                <img src={image} alt="Moja_Ikona" height="70px" title="Moja ikona" />
                                 <input className="polozaj_Chbx_Ikona"
                                     type="checkbox"
                                     value={id}

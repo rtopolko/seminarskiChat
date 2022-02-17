@@ -2,19 +2,19 @@ const Slike = [
   {
     id: 1,
     name: "Zavrsni rad",
-    url: "/images/ZavrsniRad.png",
+    url: "images/3aa694c69af80ede0526.png",
   },
 
   {
     id: 2,
     name: "Mentor komentar",
-    url: "/images/Email.png",
+    url: "images/cec8511b37702f651b01.png",
   },
 
   {
     id: 3,
     name: "Rezultati",
-    url: "/images/RezIsp.png",
+    url: "images/f7a42860a9b175191b90.png",
   },
 ];
 export default Slike;

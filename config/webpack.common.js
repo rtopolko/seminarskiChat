@@ -9,6 +9,7 @@ module.exports = {
     filename: "[name].[contenthash].js",
     publicPath: "",
     assetModuleFilename: "images/[hash][ext][query]",
+    // assetModuleFilename: "images/[name][ext]",
   },
   module: {
     rules: [

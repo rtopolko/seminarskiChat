@@ -2,6 +2,7 @@ import "./App.scss";
 import { useState } from 'react';
 import { LogiraniKorisnik_context, Ikone_context } from "./components/context";
 import { Header, Main, Footer } from "./components";
+import Import_SLIKE from "../src/components/utility/ImportSlike";
 
 function App() {
 

@@ -10,11 +10,11 @@ export default function Foother() {
     return (
     <section className="footer_blok">   
 
-          <img className="footer_logo_algebra" src={IKONA_ALGEBRA} alt="algebra_logo" height="70px" title="Logo Algebra"/>
+          <img className="footer_logo_algebra" src={IKONA_ALGEBRA} alt="algebra_logo" height="90px" title="Logo Algebra"/>
                 
           <section className="footer_polaznik">
             
-                <img className="footer_logo_polaznik" src={IKONA_POLAZNIK} alt="polaznik_logo" height="70px" title="Logo polaznika"/>           
+                <img className="footer_logo_polaznik" src={IKONA_POLAZNIK} alt="polaznik_logo" height="90px" title="Logo polaznika"/>           
             
               <section className="footer_upisani_text">
                   <p><strong>{SEMINARSKI}</strong> {SEMINARSKI_NAZIV}</p>

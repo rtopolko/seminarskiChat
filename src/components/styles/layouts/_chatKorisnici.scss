@@ -29,14 +29,14 @@
   margin: 50px 30px;
   width: 300px;
   height: 100%;
-  padding-top: 15px;
+  padding-top: 10px;
   padding-left: 50px;
   padding-right: 20px;
   border-bottom-right-radius: 30px;
   border-top-right-radius: 30px;
   border-bottom-left-radius: 20px;
   font-family: $FONT_CALIBRI;
-  font-size: 12px;
+  font-size: 18px;
   background-image: $COLOR_KORISNIK;
   color: $COLOR_BLACK;
 }
@@ -46,7 +46,7 @@
   top: 15vh;
   padding: 10px;
   font-family: $FONT_CALIBRI;
-  font-size: 12px;
+  font-size: 20px;
   font-weight: bold;
   color: $COLOR_NASLOV;
   text-align: left;
@@ -54,8 +54,8 @@
 
 .gumb {
   position: absolute;
-  right: 25px;
-  top: 25px;
+  right: 45px;
+  top: 10px;
 }
 
 .odjava_gumb {

@@ -4,7 +4,7 @@ function Staza_ikone(logiraniKorisnikIkonaID, spremljeneSveIkone) {
         spremljeneSveIkone && spremljeneSveIkone.map((item) => {
                  const { id, image } = item
                           if (logiraniKorisnikIkonaID === id) {
-                            stazaIkone= window.location.origin + image
+                            stazaIkone=image
                             }
                           return null;
                       });
